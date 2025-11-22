@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/react-app/Layout";
 import { App } from "@/react-app/App";
 
-import About from "@/react-app/pages/about";
+import About from '@/react-app/pages/About';
 import Blog from "@/react-app/pages/Blog";
 
 import "@/react-app/index.css";

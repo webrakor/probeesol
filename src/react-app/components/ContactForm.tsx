@@ -15,8 +15,6 @@ const servicesList = [
 ];
 
 // Define the WhatsApp number (REPLACE THIS WITH YOUR ACTUAL NUMBER)
-const WHATSAPP_NUMBER = '91807576xxxx'; 
-
 const ContactForm = ({ onClose }: ContactFormProps) => {
   const [formState, setFormState] = useState({
     name: '',
@@ -82,7 +80,7 @@ I am ready to proceed with a professional partnership. Please advise on the next
 Thank you.`;
 
     const encodedMessage = encodeURIComponent(message);
-    return `https://wa.me/+918179152472?text=${encodedMessage}`;
+    return `https://wa.me/8179152472?text=${encodedMessage}`;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
