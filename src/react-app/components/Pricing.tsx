@@ -23,12 +23,6 @@ const ComparisonTable = () => {
       price: '₹24,999',
       description: 'Strong visibility with long-term brand impact',
       badge: null,
-    },
-    {
-      name: 'Website Services',
-      price: '₹19,999+',
-      description: 'Professional website design and development',
-      badge: 'New',
     }
   ];
 
@@ -40,22 +34,19 @@ const ComparisonTable = () => {
           name: 'Campaign Duration',
           plan1: '8 days',
           plan2: '21 days',
-          plan3: '31 days',
-          plan4: 'N/A'
+          plan3: '31 days'
         },
         {
           name: 'Estimated Impressions',
           plan1: '6,000-10,000',
           plan2: '20,000-30,000',
-          plan3: '30,000-50,000',
-          plan4: 'Digital Reach'
+          plan3: '30,000-50,000'
         },
         {
           name: 'Target Coverage',
           plan1: '1-2 prime areas',
           plan2: '3-5 strategic areas',
-          plan3: 'City-wide coverage',
-          plan4: 'Online presence'
+          plan3: 'City-wide coverage'
         }
       ]
     },
@@ -66,36 +57,31 @@ const ComparisonTable = () => {
           name: 'Design Cost',
           plan1: '₹1,000',
           plan2: 'Included',
-          plan3: 'Included',
-          plan4: 'Included'
+          plan3: 'Included'
         },
         {
           name: 'Printing Cost',
           plan1: '₹3,000',
           plan2: 'Included',
-          plan3: 'Included',
-          plan4: 'N/A'
+          plan3: 'Included'
         },
         {
           name: 'Installation Cost',
           plan1: '₹1,000',
           plan2: 'Included',
-          plan3: 'Included',
-          plan4: 'N/A'
+          plan3: 'Included'
         },
         {
           name: 'Design Concepts',
           plan1: '1 concept',
           plan2: '3 concepts',
-          plan3: 'Unlimited concepts',
-          plan4: '1 concept'
+          plan3: 'Unlimited concepts'
         },
         {
           name: 'Design Revisions',
           plan1: '2 revisions',
           plan2: '5 revisions',
-          plan3: 'Unlimited revisions',
-          plan4: '2 revisions'
+          plan3: 'Unlimited revisions'
         }
       ]
     },
@@ -106,50 +92,25 @@ const ComparisonTable = () => {
           name: 'Basic Design Support',
           plan1: <Check className="h-5 w-5 text-green-500" />,
           plan2: <Check className="h-5 w-5 text-green-500" />,
-          plan3: <Check className="h-5 w-5 text-green-500" />,
-          plan4: <Check className="h-5 w-5 text-green-500" />
+          plan3: <Check className="h-5 w-5 text-green-500" />
         },
         {
           name: 'Performance Reports',
           plan1: <Check className="h-5 w-5 text-green-500" />,
           plan2: <Check className="h-5 w-5 text-green-500" />,
-          plan3: <Check className="h-5 w-5 text-green-500" />,
-          plan4: <Check className="h-5 w-5 text-green-500" />
+          plan3: <Check className="h-5 w-5 text-green-500" />
         },
         {
           name: 'Weekly Updates',
           plan1: <X className="h-5 w-5 text-red-400" />,
           plan2: <Check className="h-5 w-5 text-green-500" />,
-          plan3: <Check className="h-5 w-5 text-green-500" />,
-          plan4: <Check className="h-5 w-5 text-green-500" />
+          plan3: <Check className="h-5 w-5 text-green-500" />
         },
         {
           name: 'Custom Placement',
           plan1: <X className="h-5 w-5 text-red-400" />,
           plan2: <Check className="h-5 w-5 text-green-500" />,
-          plan3: <Check className="h-5 w-5 text-green-500" />,
-          plan4: 'N/A'
-        },
-        {
-          name: 'Mobile Responsive',
-          plan1: 'N/A',
-          plan2: 'N/A',
-          plan3: 'N/A',
-          plan4: <Check className="h-5 w-5 text-green-500" />
-        },
-        {
-          name: 'SEO Setup',
-          plan1: 'N/A',
-          plan2: 'N/A',
-          plan3: 'N/A',
-          plan4: <Check className="h-5 w-5 text-green-500" />
-        },
-        {
-          name: 'Hosting Support',
-          plan1: 'N/A',
-          plan2: 'N/A',
-          plan3: 'N/A',
-          plan4: <Check className="h-5 w-5 text-green-500" />
+          plan3: <Check className="h-5 w-5 text-green-500" />
         }
       ]
     },
@@ -160,22 +121,19 @@ const ComparisonTable = () => {
           name: 'Best For',
           plan1: 'Short-term promotions, event awareness',
           plan2: 'Medium-duration promotions, brand building',
-          plan3: 'Long-term campaigns, established brands',
-          plan4: 'Online presence, digital transformation'
+          plan3: 'Long-term campaigns, established brands'
         },
         {
           name: 'Brand Recall',
           plan1: 'Short-term',
           plan2: 'Medium-term',
-          plan3: 'Long-term',
-          plan4: 'Continuous'
+          plan3: 'Long-term'
         },
         {
           name: 'ROI Potential',
           plan1: 'Quick wins',
           plan2: 'Balanced growth',
-          plan3: 'Maximum impact',
-          plan4: 'Digital expansion'
+          plan3: 'Maximum impact'
         }
       ]
     }
@@ -282,37 +240,37 @@ const ComparisonTable = () => {
             </p>
           </div>
 
-          {/* Plan Cards Container */}
-          <div className="flex overflow-x-auto flex-nowrap md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-x-visible gap-4 md:gap-6 mb-12 pb-4">
+          {/* Minimal Plan Cards Container */}
+          <div className="flex overflow-x-auto flex-nowrap md:grid md:grid-cols-3 md:overflow-x-visible gap-4 md:gap-8 mb-12 pb-4">
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`min-w-[150px] md:min-w-0 flex-shrink-0 md:w-auto bg-white dark:bg-gray-800 rounded-xl border-2 p-4 md:p-6 text-center ${plan.badge
-                  ? 'border-[#3b82f6] dark:border-[#60a5fa] shadow-lg'
+                className={`min-w-[120px] md:min-w-0 flex-shrink-0 md:w-auto bg-white dark:bg-gray-800 rounded-xl border-2 p-4 md:p-8 text-center ${plan.badge
+                  ? 'border-[#3b82f6] dark:border-[#60a5fa] shadow-lg md:shadow-xl'
                   : 'border-gray-200 dark:border-gray-700'
                   }`}
               >
                 {plan.badge && (
-                  <div className="mb-2 md:mb-4">
-                    <span className="bg-[#3b82f6] dark:bg-[#60a5fa] text-white text-xs md:text-sm font-medium py-1 px-3 md:py-1.5 md:px-4 rounded-full">
+                  <div className="mb-3 md:mb-6">
+                    <span className="bg-[#3b82f6] dark:bg-[#60a5fa] text-white text-xs md:text-sm font-medium py-1 px-3 md:py-2 md:px-5 rounded-full">
                       {plan.badge}
                     </span>
                   </div>
                 )}
-                <h3 className="text-base md:text-xl font-bold text-[#111111] dark:text-white mb-1">
+                <h3 className="text-sm md:text-2xl font-bold text-[#111111] dark:text-white mb-2 md:mb-4">
                   {plan.name}
                 </h3>
-                <div className="mb-2 md:mb-3">
-                  <span className="text-xl md:text-2xl font-bold text-[#111111] dark:text-white">
+                <div className="mb-2 md:mb-6">
+                  <span className="text-base md:text-4xl font-bold text-[#111111] dark:text-white">
                     {plan.price}
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed hidden sm:block">
+                <p className="text-gray-600 dark:text-gray-400 text-xs md:text-base mb-4 md:mb-8 leading-tight">
                   {plan.description}
                 </p>
                 <button
                   onClick={() => handleGetInTouch(plan.name)}
-                  className={`w-full py-2 md:py-3 px-4 rounded-lg font-semibold text-xs md:text-sm transition-colors ${plan.badge
+                  className={`w-full py-1.5 md:py-4 px-3 md:px-6 rounded-lg font-semibold text-xs md:text-lg transition-colors ${plan.badge
                     ? 'bg-[#3b82f6] hover:bg-[#2563eb] text-white'
                     : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-[#111111] dark:text-white'
                     }`}
@@ -324,20 +282,20 @@ const ComparisonTable = () => {
           </div>
 
           {/* Comparison Table Container */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
+          <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm mb-8">
             <div className="w-full overflow-x-auto md:overflow-x-visible">
-              <div className="min-w-[550px] md:min-w-full">
+              <div className="min-w-[450px] md:min-w-full">
                 {/* Table Header Row */}
-                <div className="flex md:grid md:grid-cols-5 border-b border-gray-200 dark:border-gray-700">
+                <div className="flex md:grid md:grid-cols-4 border-b border-gray-200 dark:border-gray-700">
                   <div className="p-4 md:p-6 bg-gray-50 dark:bg-gray-900/50 sticky left-0 z-20 w-[150px] md:w-auto flex-shrink-0 border-r border-gray-200 dark:border-gray-700">
                     <h3 className="font-semibold text-[#111111] dark:text-white text-sm md:text-base">Features</h3>
                   </div>
                   {plans.map((plan, index) => (
                     <PlanHeaderCell key={index} plan={plan} index={index}>
-                      <h4 className="font-bold text-sm md:text-lg text-[#111111] dark:text-white mb-0">
+                      <h4 className="font-bold text-sm md:text-xl text-[#111111] dark:text-white mb-0 md:mb-2">
                         {plan.name.split('-')[0]}
                       </h4>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-xs md:text-2xl font-bold text-[#3b82f6] dark:text-[#60a5fa]">
                         {plan.price}
                       </p>
                     </PlanHeaderCell>
@@ -349,7 +307,7 @@ const ComparisonTable = () => {
                   {features.map((section, sectionIndex) => (
                     <div key={sectionIndex}>
                       {/* Section Header */}
-                      <div className="flex md:grid md:grid-cols-5 bg-gray-50 dark:bg-gray-900/50">
+                      <div className="flex md:grid md:grid-cols-4 bg-gray-50 dark:bg-gray-900/50">
                         <div className="p-3 md:p-4 sticky left-0 z-20 w-[150px] md:w-auto flex-shrink-0 border-r border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
                           <h4 className="font-semibold text-[#111111] dark:text-white text-xs md:text-sm">
                             {section.category}
@@ -368,7 +326,7 @@ const ComparisonTable = () => {
                       {section.items.map((item, itemIndex) => (
                         <div
                           key={itemIndex}
-                          className="flex md:grid md:grid-cols-5 hover:bg-gray-50 dark:hover:bg-gray-900/20 transition-colors"
+                          className="flex md:grid md:grid-cols-4 hover:bg-gray-50 dark:hover:bg-gray-900/20 transition-colors"
                         >
                           <div className="p-3 md:p-4 border-r border-gray-200 dark:border-gray-700 sticky left-0 z-20 w-[150px] md:w-auto flex-shrink-0 bg-white dark:bg-gray-800">
                             <div className="flex items-center gap-1 md:gap-2">
@@ -382,7 +340,6 @@ const ComparisonTable = () => {
                           <FeatureRowCell item={item.plan1} index={0} isPlan2={false} />
                           <FeatureRowCell item={item.plan2} index={1} isPlan2={true} />
                           <FeatureRowCell item={item.plan3} index={2} isPlan2={false} />
-                          <FeatureRowCell item={item.plan4} index={3} isPlan2={false} />
                         </div>
                       ))}
                     </div>
@@ -392,26 +349,44 @@ const ComparisonTable = () => {
             </div>
           </div>
 
+          {/* Website Services Banner */}
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-6 md:p-8 text-center text-white mb-8">
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">
+                Need Website Services?
+              </h3>
+              <p className="text-green-100 text-sm md:text-lg mb-4 md:mb-6">
+                Professional website design, development, and digital marketing solutions tailored to your business needs.
+              </p>
+              <button
+                onClick={() => handleGetInTouch('Website Services')}
+                className="bg-white text-green-600 hover:bg-green-50 font-semibold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-lg"
+              >
+                Contact for Website Services Details
+              </button>
+            </div>
+          </div>
+
           {/* Payment Info */}
           <div className="text-center mt-8 mb-3">
-            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">
+            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-base">
               Design + Printing + Fixing = ₹5,000 total • 50% advance, 50% after installation • All prices exclude GST
             </p>
           </div>
 
           {/* Footer Note */}
           <div className="text-center mt-0">
-            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">
-              <strong>Need a custom solution?</strong>{' '}
+            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-base">
+              <strong>Need Digital Marketing or Printing Services?</strong>{' '}
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=probbeesolutions@gmail.com&su=Custom%20Marketing%20Solution&body=Hi%20ProBee,%0A%0AI%20would%20like%20to%20discuss%20a%20custom%20marketing%20solution."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#3b82f6] dark:text-[#60a5fa] font-medium hover:underline"
               >
-                Contact our team
+                Contact us for pricing
               </a>{' '}
-              for tailored campaigns and pricing.
+              and customized solutions.
             </p>
           </div>
         </div>

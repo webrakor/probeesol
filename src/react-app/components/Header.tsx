@@ -232,19 +232,6 @@ const Header = () => {
           >
             Blog
           </Link>
-
-          {/* CTA Button */}
-          <div className="pt-4">
-            <ShinyButton
-              className="w-full justify-center"
-              onClick={() => {
-                setIsMenuOpen(false);
-                bookCall();
-              }}
-            >
-              Get Free Consultation
-            </ShinyButton>
-          </div>
         </div>
       </div>
     </header>
