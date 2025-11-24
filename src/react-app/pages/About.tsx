@@ -103,7 +103,7 @@ const About = () => {
             {/* Founder Content */}
             <div className="md:col-span-2 space-y-6">
               <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
-                Bhargav Poludasu is a Digital Marketing Consultant, Artist, and Content Creator known for generating millions of views and consistently driving 100k+ monthly engagement across platforms. As the founder of Symphonize, he blends creativity, strategy, and innovation to deliver impactful digital experiences that help brands grow.
+                Bhargav Poludasu is a Digital Marketing Consultant, Artist, and Content Creator known for generating millions of views and consistently driving 100k+ monthly engagement across platforms. As the founder of ProBee Solutions, he blends creativity, strategy, and innovation to deliver impactful digital experiences that help brands grow.
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
@@ -169,7 +169,7 @@ const About = () => {
             {/* Developer */}
             <div className="text-center bg-gray-50 dark:bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
               <div className="w-20 h-20 md:w-24 md:h-24 bg-gray-300 dark:bg-gray-700 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-gray-600 dark:text-gray-300 text-lg md:text-xl font-bold">RD</span>
+                <span className="text-gray-600 dark:text-gray-300 text-lg md:text-xl font-bold">SC</span>
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white text-lg md:text-xl mb-2">Sai Charan Puduthala</h3>
               <p className="text-green-600 dark:text-green-400 text-sm md:text-base mb-2">Lead Developer</p>
@@ -193,7 +193,7 @@ const About = () => {
             {/* Printing Specialist */}
             <div className="text-center bg-gray-50 dark:bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
               <div className="w-20 h-20 md:w-24 md:h-24 bg-gray-300 dark:bg-gray-700 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-gray-600 dark:text-gray-300 text-lg md:text-xl font-bold">PS</span>
+                <span className="text-gray-600 dark:text-gray-300 text-lg md:text-xl font-bold">JR</span>
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white text-lg md:text-xl mb-2">Jai Ram</h3>
               <p className="text-purple-600 dark:text-purple-400 text-sm md:text-base mb-2">Printing Specialist</p>
