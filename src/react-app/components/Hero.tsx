@@ -5,9 +5,18 @@ import Modal from '@/react-app/components/Modal';
 const Hero = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
-
   const closeVideoModal = () => {
     setIsVideoModalOpen(false);
+  };
+
+  const scrollToFooter = () => {
+    const footerSection = document.getElementById('footer');
+    if (footerSection) {
+      footerSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   };
 
   return (
@@ -22,11 +31,13 @@ const Hero = () => {
            ProBee Solutions helps small businesses get noticed, build trust, and grow faster with creative digital marketing and impactful offline advertising from social media, SEO to hoardings, events, and local promotions.
           </p>
           <div className="flex justify-center pt-4">
-            <ShinyButton className="w-max px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base">
+            <ShinyButton 
+              className="w-max px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base"
+              onClick={scrollToFooter}
+            >
               Get a Free Consultation
             </ShinyButton>
           </div>
-
         </div>
 
         {/* Product Image */}

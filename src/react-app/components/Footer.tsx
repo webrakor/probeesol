@@ -4,7 +4,7 @@ import { Mail, Loader2, CheckCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   // State for Newsletter
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -14,14 +14,14 @@ const Footer = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     setIsLoading(false);
     setIsSubscribed(true);
     setEmail('');
-    
+
     // Reset success message after 5 seconds
     setTimeout(() => {
       setIsSubscribed(false);
@@ -29,12 +29,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="px-6 pt-16 pb-10 md:px-12 lg:px-20 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <footer id="footer" className="px-6 pt-16 pb-10 md:px-12 lg:px-20 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
-        
+
         {/* TOP SECTION: Logo/Social vs. Newsletter */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mb-12">
-          
+
           {/* 1. Logo and social links (Left Column) */}
           <div>
             <div className="mb-6 flex items-center">
@@ -85,7 +85,7 @@ const Footer = () => {
                     required
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isLoading}
@@ -102,7 +102,7 @@ const Footer = () => {
               </form>
             )}
           </div>
-          
+
         </div>
 
         {/* BOTTOM BAR: Copyright (MODIFIED FOR CENTERING) */}

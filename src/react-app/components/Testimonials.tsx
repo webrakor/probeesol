@@ -23,6 +23,41 @@ const testimonials = [
     role: "Tricine Media",
     img: "/images/tricine.jpg",
   },
+  {
+  id: 4,
+  text: "The ProBee team helped us run hyper-local ads that actually converted. Their strategy and execution are far better than typical marketing agencies.",
+  name: "Harsha",
+  role: "Owner, PixelWave Studios",
+  img: "https://randomuser.me/api/portraits/men/45.jpg",
+},
+{
+  id: 5,
+  text: "Our offline marketing was completely transformed. From hoardings to local promotions, ProBee handled everything with precision and speed.",
+  name: "Sindhu",
+  role: "Marketing Head, UrbanCart",
+  img: "https://randomuser.me/api/portraits/women/22.jpg",
+},
+{
+  id: 6,
+  text: "We saw a clear boost in enquiries within the first week. Their creative approach and quick delivery make them stand out from the rest.",
+  name: "Rakesh",
+  role: "Founder, HomeFix Services",
+  img: "https://randomuser.me/api/portraits/men/50.jpg",
+},
+{
+  id: 7,
+  text: "ProBee’s design and campaign planning helped us position our brand more professionally. Highly recommend for small businesses getting started.",
+  name: "Serena",
+  role: "Founder, Craftora Boutique",
+  img: "https://randomuser.me/api/portraits/women/18.jpg",
+},
+{
+  id: 8,
+  text: "Very professional team. They understood our industry well and delivered campaigns that actually brought in footfall and genuine leads.",
+  name: "Manikanta",
+  role: "Manager, GreenBowl Café",
+  img: "https://randomuser.me/api/portraits/men/12.jpg",
+},
 ];
 
 const TestimonialSection = () => {

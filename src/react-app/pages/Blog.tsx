@@ -16,9 +16,17 @@ const Blog: React.FC = () => {
       id: 1,
       category: 'DIGITAL MARKETING',
       title: 'Boost Your Brand with SEO & Content Marketing in 2025',
-      shortDescription: 'Digital marketing is evolving fast. Learn how SEO, content strategy, and analytics can skyrocket your brand’s online visibility.',
-      fullContent: `Learn how businesses can leverage SEO, Google Ads, and social media campaigns to dominate their niche. Combining analytics with creative content ensures measurable growth and higher ROI. Discover the latest trends in content marketing and how to implement them effectively for your business growth.`,
-      image: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      previewContent: `
+Learn how businesses can leverage SEO, Google Ads, and social media campaigns to dominate their niche. Combining analytics with creative content ensures measurable growth and higher ROI.
+      `,
+      fullContent: `
+Learn how businesses can leverage SEO, Google Ads, and social media campaigns to dominate their niche. Combining analytics with creative content ensures measurable growth and higher ROI.
+
+Content marketing now goes beyond simple blog posts; it involves video, podcasts, and interactive media. By creating valuable and targeted content, brands can position themselves as authorities in their field and attract high-quality leads consistently.
+
+Additionally, monitoring KPIs, performing A/B testing, and adjusting campaigns dynamically can maximize ROI. Leveraging analytics tools enables businesses to refine their strategies continuously, ensuring that every marketing effort contributes meaningfully to growth.
+      `,
+      image: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0',
       date: 'NOV 22, 2025',
       author: 'PROBEE SOLUTIONS',
       readTime: '6 min read'
@@ -27,9 +35,17 @@ const Blog: React.FC = () => {
       id: 2,
       category: 'WEB DEVELOPMENT',
       title: 'Modern Web Development: React, Next.js & Tailwind CSS',
-      shortDescription: 'Building fast, scalable websites is essential for business growth. Discover the modern stack powering top digital brands.',
-      fullContent: `Discover insights on using React, Next.js, and Tailwind CSS to create responsive, high-performance websites. Learn how component-driven design and server-side rendering enhance UX and SEO simultaneously. We'll explore best practices for deployment and performance optimization that can significantly improve your website's loading times and user engagement metrics.`,
-      image: 'https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      previewContent: `
+Building fast, scalable websites is essential for business growth. Learn how React, Next.js, and Tailwind CSS work together to deliver responsive, high-performance websites.
+      `,
+      fullContent: `
+Building fast, scalable websites is essential for business growth. Learn how React, Next.js, and Tailwind CSS work together to deliver responsive, high-performance websites.
+
+React allows developers to build reusable components, enhancing productivity and consistency. Next.js provides server-side rendering and static site generation for improved SEO and load times, while Tailwind CSS enables rapid styling with utility classes and a mobile-first approach.
+
+Combining these technologies, developers can create interactive, visually appealing, and highly optimized websites. Performance monitoring, accessibility considerations, and responsive layouts are key to delivering an excellent user experience that drives engagement and conversions.
+      `,
+      image: 'https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0',
       date: 'NOV 20, 2025',
       author: 'PROBEE SOLUTIONS',
       readTime: '7 min read'
@@ -38,9 +54,17 @@ const Blog: React.FC = () => {
       id: 3,
       category: 'DIGITAL MARKETING',
       title: 'Email Marketing That Actually Converts',
-      shortDescription: 'Stop spamming. Learn proven email strategies that engage leads and turn them into loyal customers.',
-      fullContent: `From personalization to automation, this post covers how to segment your audience, craft compelling subject lines, and analyze campaign metrics to improve conversion rates. We'll dive deep into A/B testing strategies, email sequence optimization, and how to leverage behavioral triggers to maximize your email marketing ROI while maintaining compliance with data protection regulations.`,
-      image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      previewContent: `
+Stop spamming and start engaging. This guide dives into proven email strategies that turn leads into loyal customers through personalization and automation.
+      `,
+      fullContent: `
+Stop spamming and start engaging. This guide dives into proven email strategies that turn leads into loyal customers through personalization and automation.
+
+Segmenting your audience allows targeted campaigns, which increases open and click-through rates. Personalization, compelling subject lines, and effective email sequencing are key to nurturing leads through the funnel.
+
+Automation tools enable scalable campaigns, while A/B testing and analytics ensure campaigns perform optimally. By integrating behavioral triggers and tracking conversions, businesses can maximize ROI while providing value to their subscribers.
+      `,
+      image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0',
       date: 'NOV 18, 2025',
       author: 'PROBEE SOLUTIONS',
       readTime: '5 min read'
@@ -49,9 +73,17 @@ const Blog: React.FC = () => {
       id: 4,
       category: 'WEB DEVELOPMENT',
       title: 'Optimizing Website Performance for Higher Conversions',
-      shortDescription: 'Page speed, accessibility, and responsive design matter. Learn practical tips for improving user experience and conversions.',
-      fullContent: `Explore best practices for image optimization, lazy loading, and server-side rendering. Learn how performance improvements directly influence SEO and lead generation. We'll cover advanced techniques including Core Web Vitals optimization, caching strategies, and how to use performance monitoring tools to identify and fix bottlenecks that could be costing you valuable conversions and search engine rankings.`,
-      image: 'https://plus.unsplash.com/premium_photo-1661544807248-2786202627e8?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      previewContent: `
+Page speed, accessibility, and responsive design are crucial for conversions. Learn practical strategies to improve user experience and keep visitors engaged.
+      `,
+      fullContent: `
+Page speed, accessibility, and responsive design are crucial for conversions. Learn practical strategies to improve user experience and keep visitors engaged.
+
+Optimizing images, using lazy loading, and implementing server-side rendering can dramatically improve loading times. Core Web Vitals metrics, caching strategies, and performance monitoring help identify bottlenecks that affect SEO and user experience.
+
+Advanced optimization techniques, such as code splitting, minification, and efficient resource loading, contribute to faster page interactions. By maintaining high performance and accessibility standards, websites can increase retention, reduce bounce rates, and ultimately drive higher conversions.
+      `,
+      image: 'https://plus.unsplash.com/premium_photo-1661544807248-2786202627e8?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0',
       date: 'NOV 15, 2025',
       author: 'PROBEE SOLUTIONS',
       readTime: '6 min read'
@@ -60,9 +92,17 @@ const Blog: React.FC = () => {
       id: 5,
       category: 'DIGITAL MARKETING',
       title: 'Social Media Marketing Trends You Must Follow',
-      shortDescription: 'Social media keeps changing. Stay ahead with the latest trends and tools that make marketing more effective.',
-      fullContent: `Highlighting the importance of short-form videos, AI-powered ad targeting, and cross-platform engagement. Learn actionable tips for consistent branding and audience growth. We'll explore emerging platforms, algorithm changes, and how to create content that resonates with your target audience while measuring the true impact of your social media efforts through advanced analytics and attribution modeling.`,
-      image: 'https://images.unsplash.com/photo-1730337356162-19c636fda8b5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      previewContent: `
+Social media is constantly evolving. Stay ahead of the curve by understanding the latest trends and tools that make marketing more effective.
+      `,
+      fullContent: `
+Social media is constantly evolving. Stay ahead of the curve by understanding the latest trends and tools that make marketing more effective.
+
+Short-form video content, AI-powered targeting, and cross-platform engagement are shaping the current landscape. Brands must create content that resonates with their audience and adapt quickly to platform algorithm changes.
+
+Analytics and performance measurement are essential for determining ROI and optimizing campaigns. Consistency in branding, audience interaction, and leveraging emerging platforms are key strategies for achieving long-term growth and engagement.
+      `,
+      image: 'https://images.unsplash.com/photo-1730337356162-19c636fda8b5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0',
       date: 'NOV 12, 2025',
       author: 'PROBEE SOLUTIONS',
       readTime: '5 min read'
@@ -71,7 +111,6 @@ const Blog: React.FC = () => {
 
   return (
     <section className="bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen py-8">
-      {/* MODIFIED: Increased max-width to 6xl and increased padding (px- classes) for larger gaps */}
       <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16">
         
         {/* Left Aligned Header with Subtitle */}
@@ -120,7 +159,7 @@ const Blog: React.FC = () => {
 
                     {/* Description - Slightly decreased for desktop */}
                     <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-                      {post.shortDescription}
+                      {post.previewContent}
                     </p>
 
                     {/* Expandable Content */}
