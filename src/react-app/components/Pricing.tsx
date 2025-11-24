@@ -240,46 +240,55 @@ const ComparisonTable = () => {
             </p>
           </div>
 
-          {/* Minimal Plan Cards Container */}
-          <div className="flex overflow-x-auto flex-nowrap md:grid md:grid-cols-3 md:overflow-x-visible gap-4 md:gap-8 mb-12 pb-4">
-            {plans.map((plan, index) => (
-              <div
-                key={index}
-                className={`min-w-[120px] md:min-w-0 flex-shrink-0 md:w-auto bg-white dark:bg-gray-800 rounded-xl border-2 p-4 md:p-8 text-center ${plan.badge
-                  ? 'border-[#3b82f6] dark:border-[#60a5fa] shadow-lg md:shadow-xl'
-                  : 'border-gray-200 dark:border-gray-700'
-                  }`}
-              >
-                {plan.badge && (
-                  <div className="mb-3 md:mb-6">
-                    <span className="bg-[#3b82f6] dark:bg-[#60a5fa] text-white text-xs md:text-sm font-medium py-1 px-3 md:py-2 md:px-5 rounded-full">
-                      {plan.badge}
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-sm md:text-2xl font-bold text-[#111111] dark:text-white mb-2 md:mb-4">
-                  {plan.name}
-                </h3>
-                <div className="mb-2 md:mb-6">
-                  <span className="text-base md:text-4xl font-bold text-[#111111] dark:text-white">
-                    {plan.price}
-                  </span>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 text-xs md:text-base mb-4 md:mb-8 leading-tight">
-                  {plan.description}
-                </p>
-                <button
-                  onClick={() => handleGetInTouch(plan.name)}
-                  className={`w-full py-1.5 md:py-4 px-3 md:px-6 rounded-lg font-semibold text-xs md:text-lg transition-colors ${plan.badge
-                    ? 'bg-[#3b82f6] hover:bg-[#2563eb] text-white'
-                    : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-[#111111] dark:text-white'
-                    }`}
-                >
-                  Get in touch
-                </button>
-              </div>
-            ))}
-          </div>
+{/* Redesigned Minimal Plan Cards Container */}
+<div className="flex overflow-x-auto md:justify-center gap-4 md:gap-8 mb-12 pb-4 px-2 md:px-0">
+  {plans.map((plan, index) => (
+    <div
+      key={index}
+      className={`flex-shrink-0 
+        ${plan.badge ? 'w-56 md:w-72' : 'w-64 md:w-72'} 
+        bg-white dark:bg-gray-800 rounded-2xl border-2 
+        ${plan.badge ? 'border-blue-500 shadow-xl' : 'border-gray-200'}
+        p-6 md:p-8 flex flex-col justify-between text-center 
+        transition-transform hover:scale-105`}
+    >
+      {/* Badge */}
+      {plan.badge && (
+        <span className="bg-blue-500 text-white text-xs md:text-sm font-semibold py-1 px-3 rounded-full mb-4 inline-block">
+          {plan.badge}
+        </span>
+      )}
+
+      {/* Plan Name */}
+      <h3 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white mb-2">
+        {plan.name}
+      </h3>
+
+      {/* Price */}
+      <p className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-3">
+        {plan.price}
+      </p>
+
+      {/* Description */}
+      <p className="text-gray-500 dark:text-gray-300 text-sm md:text-base mb-6">
+        {plan.description}
+      </p>
+
+      {/* CTA Button */}
+      <button
+        onClick={() => handleGetInTouch(plan.name)}
+        className={`w-full py-2 md:py-3 px-4 rounded-lg font-semibold text-sm md:text-lg transition-colors ${
+          plan.badge
+            ? 'bg-blue-500 text-white hover:bg-blue-600'
+            : 'bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600'
+        }`}
+      >
+        Get in touch
+      </button>
+    </div>
+  ))}
+</div>
+
 
           {/* Comparison Table Container */}
           <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm mb-8">
@@ -359,13 +368,18 @@ const ComparisonTable = () => {
                 Professional website design, development, and digital marketing solutions tailored to your business needs.
               </p>
               <button
-                onClick={() => handleGetInTouch('Website Services')}
+                onClick={() => {
+                  const whatsappMessage = `Hello ProBee Solutions!%0A%0AI am interested in Website Services and would like to get more details.`;
+                  const whatsappUrl = `https://wa.me/918179152472?text=${whatsappMessage}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
                 className="bg-white text-green-600 hover:bg-green-50 font-semibold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-lg"
               >
                 Contact for Website Services Details
               </button>
             </div>
           </div>
+
 
           {/* Payment Info */}
           <div className="text-center mt-8 mb-3">
